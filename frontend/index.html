@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockchain Visualizer</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Blockchain Visualizer ⛓️</h1>
+
+        <!-- Transaction Form -->
+        <div class="transaction-form">
+            <div class="form-group">
+                <label for="sender">Sender:</label>
+                <input type="text" id="sender" placeholder="Enter sender">
+            </div>
+            <div class="form-group">
+                <label for="receiver">Receiver:</label>
+                <input type="text" id="receiver" placeholder="Enter receiver">
+            </div>
+            <div class="form-group">
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" placeholder="Enter amount">
+            </div>
+            <button onclick="addTransaction()">Add Transaction</button>
+            <button onclick="mineBlock()">Mine Block ⛏️</button>
+        </div>
+
+        <!-- Blockchain Visualization -->
+        <div class="blockchain-visualization" id="blockchain-container"></div>
+
+        <!-- Status Message -->
+        <p class="status" id="status-message"></p>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
